@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTituloOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opciones del Día"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1A1E36"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Turno Principal:" android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnElegirTurno1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECCIONAR TURNO 1"
+        android:backgroundTint="#78909C"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Segundo Turno (Opcional):" android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnElegirTurno2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECCIONAR TURNO 2"
+        android:backgroundTint="#78909C"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notas del día:" android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etNotaDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: Peluquero a las 18:00"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR CAMBIOS"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#33404F"/>
+    <!-- Botón NUEVO para borrar todo el día -->
+    <Button
+        android:id="@+id/btnBorrarDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BORRAR TODO EL DÍA"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E64A19"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR CAMBIOS"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#33404F"/>
+</LinearLayout>

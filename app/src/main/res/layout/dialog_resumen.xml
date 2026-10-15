@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvTituloResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESUMEN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1A1E36"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MES ACTUAL"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#33404F"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutConteosMensuales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHorasMensuales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏱️ Total Horas: 0h"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#33404F"
+            android:layout_marginBottom="24dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANUAL"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#33404F"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutConteosAnuales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHorasAnuales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏱️ Total Horas: 0h"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#33404F"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnCerrarResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CERRAR"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#78909C"/>
+    </LinearLayout>
+</ScrollView>

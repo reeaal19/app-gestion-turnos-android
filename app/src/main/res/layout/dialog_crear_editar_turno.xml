@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView android:id="@+id/tvTituloDialogoTurno" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CONFIGURAR TURNO" android:textSize="18sp" android:textStyle="bold" android:textColor="#1A1E36" android:layout_marginBottom="16dp"/>
+
+        <!-- Títulos claros para cada sección -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nombre del turno:" android:textStyle="bold"/>
+        <EditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ej: Mañana" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Abreviatura (Letra grande):" android:textStyle="bold"/>
+        <EditText android:id="@+id/etAbreviatura" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ej: M" android:maxLength="3" android:layout_marginBottom="12dp"/>
+
+        <!-- PALETA DE COLORES -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Elige un Color de fondo:" android:textStyle="bold"/>
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <!-- Botoncitos de colores -->
+                <View android:id="@+id/btnColorAmarillo" android:layout_width="40dp" android:layout_height="40dp" android:background="#FFEB3B" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorNaranja" android:layout_width="40dp" android:layout_height="40dp" android:background="#FF9800" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorVerde" android:layout_width="40dp" android:layout_height="40dp" android:background="#4CAF50" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorAzul" android:layout_width="40dp" android:layout_height="40dp" android:background="#03A9F4" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorRojo" android:layout_width="40dp" android:layout_height="40dp" android:background="#F44336" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorMorado" android:layout_width="40dp" android:layout_height="40dp" android:background="#9C27B0" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorGris" android:layout_width="40dp" android:layout_height="40dp" android:background="#9E9E9E" android:layout_marginEnd="8dp"/>
+                <View android:id="@+id/btnColorOscuro" android:layout_width="40dp" android:layout_height="40dp" android:background="#33404F"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Dejamos el código visible por si alguien quiere uno muy específico, pero bloqueado para no confundir -->
+        <EditText android:id="@+id/etColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Código de color" android:enabled="false" android:layout_marginBottom="12dp"/>
+
+        <!-- HORARIOS -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Horario (Formato HH:MM):" android:textStyle="bold"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <EditText android:id="@+id/etHoraInicio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Entrada (08:00)" android:layout_marginEnd="4dp"/>
+            <EditText android:id="@+id/etHoraFin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Salida (15:00)" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Minutos de descanso (Se restarán):" android:textStyle="bold"/>
+        <EditText android:id="@+id/etDescanso" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ej: 15" android:inputType="number" android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnGuardarTurno" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GUARDAR TURNO" android:backgroundTint="#33404F" android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnBorrarTurno" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ELIMINAR ESTE TURNO" android:backgroundTint="#E64A19" android:textColor="#FFFFFF" android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

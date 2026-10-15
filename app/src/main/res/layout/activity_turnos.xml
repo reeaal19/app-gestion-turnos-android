@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA">
+
+    <!-- Cabecera con relleno superior para que el color llegue hasta la batería -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TURNOS DISPONIBLES"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="42dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#33404F"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botón para añadir nuevos turnos -->
+    <Button
+        android:id="@+id/btnCrearTurno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="CREAR TURNO NUEVO"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#78909C" />
+
+    <!-- Lista con todos tus turnos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListaTurnos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="8dp" />
+
+</LinearLayout>
